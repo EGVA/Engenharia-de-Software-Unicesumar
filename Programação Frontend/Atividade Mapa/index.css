@@ -4,6 +4,8 @@
 }
 main{
     margin: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 body{
