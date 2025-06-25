@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Portfólio Eric Gabriel Varola</h1>
+    </header>
+    <nav>
+        <a href="./index.html" class="nav-button"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+        <a target="_blank" href="https://linkedin.com/in/eric-gabriel-varola-31935b202" class="nav-button"><i
+                class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+        <a href="./contact.html" class="nav-button"><i class="fa fa-address-book" aria-hidden="true"></i> Contato</a>
+        <a href="./stacks.html" onclick="" class="nav-button"><i class="fa fa-wrench" aria-hidden="true"></i>
+            Tecnologias</a>
+    </nav>
+    <main>
+        <div class="content-card">
+            <button class="nav-button" style="margin: 1em;" onclick="toggleContent('html')">Alternar</button>
+            <article id="html">
+                <summary>
+                    <h1>HTML5 </h1>
+                </summary>
+                <p>🚀
+                    é a espinha dorsal da web. Ele fornece a estrutura básica de páginas da internet, utilizando uma
+                    linguagem de marcação composta por elementos representados por "tags". Essas tags definem diferentes
+                    partes do conteúdo, como títulos, parágrafos, imagens, links e tabelas. O HTML permite que
+                    navegadores interpretem e exibam as informações de maneira organizada para os usuários. Embora não
+                    controle o design visual nem a interação, ele é essencial para dar significado e hierarquia ao
+                    conteúdo. Com as versões mais recentes, como o HTML5, tornou-se possível incorporar multimídia, como
+                    vídeos e áudios, sem a necessidade de plugins. Além disso, novos elementos semânticos foram
+                    introduzidos para melhorar a acessibilidade e a indexação de páginas por mecanismos de busca. Em
+                    resumo, o HTML é o ponto de partida de qualquer projeto web, formando a base sobre a qual JavaScript
+                    e CSS irão atuar para enriquecer a experiência do usuário.
+            </article>
+        </div>
+        <div class="content-card">
+            <button class="nav-button" style="margin: 1em;" onclick="toggleContent('js')">Alternar</button>
+            <article id="js">
+                <summary>
+                    <h1>Javascript </h1>
+                </summary>
+                <p>🚀
+                    é uma linguagem de programação essencial para trazer interatividade às páginas web. Enquanto o HTML
+                    define a estrutura e o CSS cuida do visual, é o JavaScript que permite dinamismo: validação de
+                    formulários, animações, respostas a ações do usuário e muito mais. Ele é executado diretamente no
+                    navegador, o que possibilita uma experiência mais fluida sem depender do servidor. Com o avanço da
+                    web, o JavaScript evoluiu drasticamente. Hoje, com frameworks como React, Vue ou Angular, é possível
+                    criar interfaces completas e até mesmo aplicações inteiras chamadas de "single-page applications"
+                    (SPAs). Além disso, com o Node.js, o JavaScript ultrapassou os limites do navegador e passou a ser
+                    usado também no lado do servidor. Sua versatilidade e a grande comunidade ativa tornam o JavaScript
+                    indispensável para desenvolvedores front-end e full stack. Dominar essa linguagem é abrir portas
+                    para soluções criativas e interfaces muito mais dinâmicas e responsivas.
+            </article>
+        </div>
+        <div class="content-card">
+            <button class="nav-button" style="margin: 1em;" onclick="toggleContent('css')">Alternar</button>
+
+            <article id="css">
+                <summary>
+                    <h1>Css </h1>
+                </summary>
+                <p>🚀
+                    é a linguagem responsável por dar estilo às páginas da web. Ele controla a apresentação visual dos
+                    elementos definidos no HTML, como cores, tamanhos, fontes, espaçamento, alinhamento e
+                    posicionamento. Com o CSS, é possível transformar uma estrutura simples em uma interface visualmente
+                    atraente e adaptável a diferentes dispositivos. Desde a introdução do CSS3, novas funcionalidades
+                    como animações, transições e layouts flexíveis foram incorporadas, facilitando a criação de designs
+                    modernos e responsivos. Técnicas como Flexbox e Grid permitem organizar os elementos da página de
+                    maneira eficiente, inclusive em telas pequenas, como celulares. O CSS também promove a separação
+                    entre conteúdo e design, facilitando a manutenção do código e possibilitando mudanças visuais sem a
+                    necessidade de alterar o HTML. Dominar o CSS é fundamental para qualquer pessoa que deseje criar
+                    interfaces bonitas, funcionais e acessíveis na web, valorizando a experiência do usuário em todos os
+                    dispositivos.
+            </article>
+        </div>
+    </main>
+</body>
+<script>
+    function toggleContent(cardId) {
+        $("#" + cardId).toggle();
+    }
+</script>
+
+</html>

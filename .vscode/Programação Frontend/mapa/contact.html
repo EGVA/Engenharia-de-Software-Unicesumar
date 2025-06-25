@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Entrar em Contato</h1>
+    </header>
+    <nav>
+        <a href="./index.html" class="nav-button"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+        <a target="_blank" href="https://linkedin.com/in/eric-gabriel-varola-31935b202" class="nav-button"><i
+                class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+        <a href="./contact.html" class="nav-button"><i class="fa fa-address-book" aria-hidden="true"></i> Contato</a>
+        <a href="./stacks.html" onclick="" class="nav-button"><i class="fa fa-wrench" aria-hidden="true"></i>
+            Tecnologias</a>
+    </nav>
+    <main>
+        <form name="contact-form" class="content-card contact-form" style="max-width: 200px;"
+            onsubmit="return validateForm()" action="./place.html" method="post">
+            <article>
+                <h2>Formulario: </h2>
+            </article>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" type="text" name="nome" id="name-input">
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email-input">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone: </label>
+                <input type="" name="telefone" id="telephone-input">
+            </div>
+            <input style="max-width: 300px;" type="submit" value="Enviar" class="nav-button"></input>
+        </form>
+    </main>
+</body>
+<script>
+    function validateForm() {
+        let nome = document.forms["contact-form"]["nome"].value;
+        let email = document.forms["contact-form"]["email"].value;
+        let telefone = document.forms["contact-form"]["telefone"].value;
+        if (nome == "") {
+            alert("Preencha o nome.");
+            return false;
+        }
+        if (email == "") {
+            alert("Preencha um email.");
+            return false;
+        }
+        if (telefone == "") {
+            alert("Preencha o telefone.");
+            return false;
+        }
+        if (isNaN(telefone)) {
+            alert("Telefones devem ser numeros.");
+            return false;
+        }
+    } 
+</script>
+
+</html>

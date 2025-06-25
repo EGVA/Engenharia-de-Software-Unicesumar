@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Portfólio Eric Gabriel Varola</h1>
+    </header>
+    <nav>
+        <a href="./index.html" class="nav-button"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+        <a target="_blank" href="https://linkedin.com/in/eric-gabriel-varola-31935b202" class="nav-button"><i
+                class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+        <a href="./contact.html" class="nav-button"><i class="fa fa-address-book" aria-hidden="true"></i> Contato</a>
+        <a href="./stacks.html" onclick="" class="nav-button"><i class="fa fa-wrench" aria-hidden="true"></i>
+            Tecnologias</a>
+    </nav>
+    <main>
+        <div class="content-card">
+
+            <h1>Eric Gabriel Varola</h3>
+                <hr>
+                <h3>Desenvolvedor de Software</h3>
+            <button class="nav-button" style="margin: 1em;" onclick="toggleContent('about')">Alternar</button>
+
+                <article id="about">
+                    <summary>
+                        <h1>Sobre mim: </h1>
+                    </summary>
+                    <p>🚀 Desenvolvedor .NET com uma paixão por resolver problemas complexos que me acompanha desde os
+                        primeiros contatos com a programação. Hoje, meu foco é canalizar essa paixão para a construção
+                        de soluções de software eficientes, robustas e de alta qualidade dentro do ecossistema .NET.
+                        Em busca da minha primeira oportunidade profissional, estou focado em aplicar minhas habilidades
+                        para agregar valor real a projetos inovadores. Tenho grande capacidade de aprendizado e estou
+                        pronto para contribuir ativamente com a equipe desde o primeiro dia.
+                        Busco um ambiente dinâmico onde eu possa colaborar com uma equipe de tecnologia, enfrentar
+                        desafios que impulsionem meu crescimento e, principalmente, contribuir para o desenvolvimento de
+                        produtos que fazem a diferença.</p>
+                </article>
+        </div>
+    </main>
+</body>
+<script>
+    function toggleContent(cardId) {
+        $("#" + cardId).toggle();
+    }
+</script>
+
+</html>
